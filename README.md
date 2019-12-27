@@ -1,7 +1,7 @@
 # Character Count
 Displays the number of characters and words typed in textarea
 
-*Project 2* - [Vanilla JS Academy](https://vanillajsacademy.com/) (Fall 2019)
+**Project 2** - [Vanilla JS Academy](https://vanillajsacademy.com/) (Fall 2019)
 
 ### Part 1
 Character countdown [Demo](https://letioneill.github.io/character-count/01-character-count.html)
