@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Character Count</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <h1>Character Count</h1>
+
+  <label for="text">Enter your text below.</label>
+  <textarea id="text"></textarea>
+
+  <p>You've written <strong><span id="character-count">0</span> characters</strong>.</p>
+
+  <script>
+    /* Polyfill */
+    'use strict'
+    if (!Element.prototype.matches) {
+      Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector
+    }
+
+    const elem = document.querySelector('#text');
+    const printCount = document.querySelector('#character-count');
+
+    document.addEventListener('input', function (event) {
+      if (!event.target.matches('#text')) return;
+
+      printCount.textContent = elem.value.length;
+
+    }, false);
+  </script>
+</body>
+
+</html>
